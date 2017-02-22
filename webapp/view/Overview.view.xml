@@ -1,0 +1,37 @@
+<mvc:View controllerName="fullscreen.equate.comFullscreenPrj.controller.Overview"
+xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" 
+
+	displayBlock="true" xmlns="sap.m">
+	
+			<Page title="{i18n>overviewPageTitle}">
+		<content>
+			<Table items="{travel>/CarrierSet}" >
+				<columns>
+					<Column>
+						<Text text="{i18n>columnId}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>columnName}"/>
+					</Column>
+						
+							<Column>
+						<Text text="{i18n>columnName1}"/>
+					</Column>
+						
+				</columns>
+				<items>
+					<ColumnListItem press="onPress" type="Navigation">
+						<cells>
+							<ObjectIdentifier title="{travel>Carrid}"/>
+							<Text text="{travel>Carrname}"/>
+							<Text text="{travel>Currcode}"/>
+							
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+	
+</mvc:View>

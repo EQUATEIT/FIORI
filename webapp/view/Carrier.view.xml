@@ -1,0 +1,27 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="fullscreen.equate.comFullscreenPrj.controller.Carrier" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:f="sap.ui.layout.form">
+	
+				<Page navButtonPress="onNavBack" showNavButton="true"
+		  title="{travel>Carrname}">
+		<content>
+			<Panel class="sapUiResponsiveMargin" width="auto">
+				<content>
+					<f:SimpleForm >
+						<f:content>
+							<Label text="{i18n>idLabelText}"/>
+							<Text text="{travel>Carrid}"/>
+							<Label text="{i18n>nameLabelText}"/>
+							<Text text="{travel>Carrname}"/>
+							<Label text="{i18n>currLabelText}"/>
+							<Text text="{travel>Currcode}"/>
+							<Label text="{i18n>urlLabelText}"/>
+							<Text text="{travel>Url}"/>
+						</f:content>
+					</f:SimpleForm>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+	
+</mvc:View>
